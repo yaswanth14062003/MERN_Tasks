@@ -1,107 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Borders</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
+<html>
+    <title>CSS TASK1</title>
+<H3 style="text-align: center;">TABLE</H3>
+<style>
+th,td{
+    background-color: #96D4D3;
+}
+#x{
+    background-color: #96D4D3;
+    border:1px solid black;
+    border-radius:8px;
+}
 
-      table {
-        width: 100%;
-        border: 2px solid black;
-      }
+td,tr,th{
+    border: 2px solid black;
+    border-radius: 10px;
+}
 
-      th,
-      td {
-        border: 2px solid black;
-        padding: 10px;
-        text-align: left;
-        border-radius: 75px;
-      }
+#b{
+    background-color: rgba(255, 255, 255, 0.492);
+    width: 90px;
+    height:40px;
+    border-radius: 6px;
+    border-color: green;
+}
+#l{
+    background-color: rgba(255, 255, 255, 0.645);
+    text-align: center;
+    padding: 80px;
+    padding-left: 580px;
+    border-spacing: 10px;
+}
 
-      th {
-        background-color: forestgreen;
-        color: Black;
-      }
+#a{
+    background-color: rgba(255, 255, 255, 0.492);
+    width: 90px;
+    height:40px;
+    border-radius: 10px;
+    border-color: green;
+}
 
-      td {
-        background-color: lightgreen;
-        color: Black;
-      }
+#c{
+    background-color: rgba(255, 255, 255, 0.492);
+    width: 90px;
+    height:40px;
+    border-radius: 18px;
+    border-color: green;
+}
 
-      .flex_item {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
+#d{
+    background-color: rgba(255, 255, 255, 0.492);
+    width: 90px;
+    height:40px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-color: green;
+}
 
-      #rcorners1 {
-        border-radius: 15px 50px 30px 5px;
-        border: 2px solid darkgreen;
-        padding: 20px;
-        width: 200px;
-        height: 100px;
-      }
+#e{
+    background-color: rgba(255, 255, 255, 0.492);
+    width: 90px;
+    height:40px;
+    border-radius: 4px;
+    border-color: green;
+}
 
-      #rcorners2 {
-        border-radius: 15px 15px 30px;
-        border: 2px solid darkgreen;
-        padding: 20px;
-        width: 200px;
-        height: 100px;
-      }
+#f{
+    width: 90px;
+    height: 25px;
+    border-radius: 60%;
+    background-color:#ffffff7d ;
+    border-color: green;
+}
 
-      #rcorners3 {
-        border-radius: 15px 50px;
-        border: 2px solid darkgreen;
-        padding: 20px;
-        width: 200px;
-        height: 100px;
-      }
 
-      #rcorners4 {
-        border-radius: 50%;
-        border: 2px solid darkgreen;
-        padding: 20px;
-        width: 200px;
-        height: 100px;
-      }
     </style>
-  </head>
-  <body>
-    <table>
-      <tr>
-        <th>FirstName</th>
-        <th>LastName</th>
+    
+    <table id="x" style="width: 100%;">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
         <th>Age</th>
-      </tr>
-      <tr>
+    </tr>
+    <tr>
         <td>Jill</td>
         <td>Smith</td>
         <td>50</td>
-      </tr>
-      <tr>
+    </tr>
+    <tr>
         <td>Eve</td>
         <td>Jackson</td>
         <td>94</td>
-      </tr>
-
-      <tr>
+    </tr>
+    <tr>
         <td>John</td>
         <td>Doe</td>
         <td>80</td>
-      </tr>
+    </tr>
+    
+    
     </table>
-    <div class="flex_item">
-      <p id="rcorners1"></p>
-      <p id="rcorners2"></p>
-      <p id="rcorners3"></p>
-    </div>
-    <div class="flex_item">
-      <p id="rcorners4"></p>
-    </div>
-  </body>
+
+
+    <table id="l">
+
+        <tr id="g">
+            <td id="b"></td>
+            <td id="a"></td>
+            <td id="c"></td>
+        </tr>
+
+        <tr id="g">
+            <td id="a"></td>
+            <td id="b"></td>
+            <td id="c"></td>
+        </tr>
+
+        <tr id="g">
+            <td id="f"></td>
+            <td id="e"></td>
+            <td id="d"></td>
+        </tr>
+
+    </table>
+
 </html>
